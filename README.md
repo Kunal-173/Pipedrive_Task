@@ -46,8 +46,7 @@ Ensure the following are installed on your local machine:
 ### Steps
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
-   cd <repository-folder>
+   git clone https://github.com/Kunal-173/Pipedrive_Task.git
    ```
 
 2. **Install Dependencies:**
