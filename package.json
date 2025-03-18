@@ -1,0 +1,15 @@
+{
+  "name": "pipedrive_demo",
+  "version": "1.0.0",
+  "description": "automation task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:run": "npx cypress run"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^14.2.0"
+  }
+}
