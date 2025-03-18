@@ -1,5 +1,5 @@
 
-# Project Name: CRM Test Automation
+# Project Name: Pipedrive CRM Test Automation Task
 
 ## Table of Contents
 - [Introduction](#introduction)
