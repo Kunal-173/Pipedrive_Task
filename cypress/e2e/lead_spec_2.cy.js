@@ -34,7 +34,7 @@ describe('Feature - Lead Test Cases - Part 2', () => {
         leadPage.verifyLeadIsArchivedSuccessfully();
     })
 
-    // This test case will fail due to bug - Pipedrive_Bug#2
+    // This test case will fail due to bug - Pipedrive_Bug#1
     it('Verify there is an error while entering invalid email and the save button is disabled', ()=>{
         leadPage.clickOnAddLeadButton();
         leadPage.verifyAddModalPopupAppears();
@@ -45,7 +45,7 @@ describe('Feature - Lead Test Cases - Part 2', () => {
 
     })
 
-    // This test case will fail due to bug - Pipedrive_Bug#3
+    // This test case will fail due to bug - Pipedrive_Bug#2
     it('Verify there is an error while entering invalid phone and the save button is disabled', ()=>{
         let inavlidPhone = '7hkakla'
         leadPage.clickOnAddLeadButton();
