@@ -113,6 +113,8 @@ To generate a report after running tests:
   npx cypress run --browser chrome
   ```
 
+---
+
 ## Running the Dockerfile Locally
 
 You can run the tests inside a Docker container using the provided `Dockerfile`.
@@ -132,3 +134,18 @@ You can run the tests inside a Docker container using the provided `Dockerfile`.
    docker run cypress-tests
    ```
    This runs the default command specified in the `Dockerfile` (e.g., `npx cypress run`).
+
+---
+
+## Known Issues and Bug Reporting
+
+### Test Failures
+Some test cases are expected to fail due to known issues in the application under test. These failures indicate genuine bugs that are being tracked and reported.
+
+### Bug Reporting Workflow
+1. When a test case fails, review the screenshots and logs generated in the `cypress/screenshots` and `cypress/videos` directories.
+2. Documented the bug in the issue tracker (e.g., Google Docs) with the following details:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior
+   - Attachments (screenshots)
+3. Assigned the bug to the appropriate team for resolution.
