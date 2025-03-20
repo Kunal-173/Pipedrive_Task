@@ -36,9 +36,9 @@ export class LoginPage {
         this.getLoginButton().should('be.visible').click();
     }
 
-    loginToApplication(){
-        this.getLoginEmailField().type('rerefi9219@bankrau.com');
-        this.getLoginPasswordField().type('sukant123456');
+    loginToApplication(email, password){
+        this.getLoginEmailField().type(email);
+        this.getLoginPasswordField().type(password);
         this.clickOnLoginButton();
     }
 

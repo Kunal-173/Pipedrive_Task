@@ -17,15 +17,16 @@
 ///<reference types = "Cypress"/>
 import './commands'
 import { LoginPage } from '../pages/loginPage'
+import * as login from '../fixtures/credentials.json'
 
 const loginPage = new LoginPage();
 
 beforeEach(()=>{
-    cy.visit('https://neova2.pipedrive.com/leads/inbox')
+    cy.visit(login.baseUrl)
     //verify the login page details
     loginPage.clickOnLoginButton();
     loginPage.verifyErrorMessagesWhileInvalidLogin();
-    loginPage.loginToApplication();
+    loginPage.loginToApplication(login.email, login.password);
     loginPage.waitforPageToLoad();
     loginPage.verifyLoginIsSuccessfull();
 })
